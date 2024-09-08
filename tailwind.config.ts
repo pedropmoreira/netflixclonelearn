@@ -1,3 +1,4 @@
+// tailwind.config.js
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -11,6 +12,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      backgroundImage: {
+        'my-image': "url('/assets/background.jpg')",
+      },
+      filter: {
+        'brilho': 'brightness(1.5) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))',
       },
     },
   },
