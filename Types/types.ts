@@ -5,6 +5,7 @@ type movieTypes = {
   poster_path:string,
   id:number,
 
+ 
 }
 
 export default movieTypes

@@ -7,3 +7,10 @@
   --foreground: #171717;
 }
 
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de linhas desejadas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

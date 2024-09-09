@@ -6,7 +6,7 @@ type ButtonProps = {
 
 const Button = ({ textContent }: ButtonProps) => {
   return (
-    <div className='bg-red-600 py-2 px-6 rounded-[0.1rem] '>
+    <div className='bg-red-600 py-2 px-6 rounded-[0.1rem] flex items-center justify-center '>
       <p>{textContent}</p>
     </div>
   );

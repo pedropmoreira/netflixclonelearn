@@ -3,21 +3,14 @@ import movieTypes from '@/Types/types'
 import Stars from './Stars'
 
 
-const MovieCard = (props:movieTypes) => {
-  return (
-    <div className='w-[8rem] text-white'>
-            <li className='w-full flex flex-col items-center justify-center h-auto m-[1rem]' >
-                <div className='w-full '>
-                    <img src={`https://image.tmdb.org/t/p/original/${props.poster_path}`}></img>
-                </div>
-                <div>
-                    <p >
-                        {props.title}
-                    </p>
-                    <Stars rating = {props.vote_average}/>
 
+const MovieCard = (props:movieTypes) => {
+  
+  return (
+    <div className='w-auto text-white'>    
+                <div className='w-[11rem] h-[17rem] p-[1rem] transform transition-transform duration-100 hover:scale-105 hover:opacity-70'>
+                    <img className = 'w-full h-full object-cover rounded-xl' src={`https://image.tmdb.org/t/p/w500/${props.poster_path}`} alt={`Capa do filme ${props.title}`}></img>       
                 </div>
-            </li>
     </div>
   )
 }
